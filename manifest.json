@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    
+    "name": "Twitter Social Toolkit",
+    "description": "Allows to share text, images, content, links, page to yur Twitter account",
+    "version": "1.0",
+    
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Twitter Share"
+    },
+    
+    "background": {
+        "scripts": ["background.js"]
+        //Persistent: false, avoids running the background script unnecessarily and runs only when the user makes a selection
+        //"persistent": false
+    },
+    
+    "icons": {
+        "64": "icon.png",
+        "32": "icon.png",
+        "16": "icon.png",
+        "128": "icon.png"
+    },
+    
+    "permissions": [
+        "contextMenus",
+        "notifications",
+        "https://twitter.com/*"
+    ]
+}
